@@ -13,6 +13,7 @@
         />
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet" />
         <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </head>
     <body>
         <nav>
@@ -94,7 +95,17 @@
             <section class="middle">
                 <div class="header">
                     <h1>Overview</h1>
-                    <input type="date" />
+                    <div class="clock">
+                        <div>
+                            <span id="hours">00</span>
+                        </div>
+                        <div>
+                            <span id="minutes">00</span>
+                        </div>
+                        <div>
+                            <span id="seconds">00</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="cards">
@@ -277,6 +288,8 @@
                                 <h4>$35</h4>
                             </div>
                         </div>
+                    </div>
+                    <div class="badges">
                         <div class="badge">
                             <span class="bg-primary"></span>
                             <div>
@@ -323,8 +336,8 @@
                             <small class="text-muted">Bonds</small>
                         </div>
                         <div class="amount">
-                            <h4>$20,033</h4>
-                            <small class="success">-4.27%</small>
+                            <h4 id="UL-c">$20,033</h4>
+                            <small class="success" id="UL-dp">-4.27%</small>
                         </div>
                     </div>
 
@@ -340,8 +353,8 @@
                             <small class="text-muted">Bonds</small>
                         </div>
                         <div class="amount">
-                            <h4>$20,033</h4>
-                            <small class="success">-4.27%</small>
+                            <h4 id="TSLA-c">$20,033</h4>
+                            <small class="success" id="TSLA-dp">-4.27%</small>
                         </div>
                     </div>
 
@@ -357,8 +370,8 @@
                             <small class="text-muted">Bonds</small>
                         </div>
                         <div class="amount">
-                            <h4>$20,033</h4>
-                            <small class="success">-4.27%</small>
+                            <h4 id="MNST-c">$20,033</h4>
+                            <small class="success" id="MNST-dp">-4.27%</small>
                         </div>
                     </div>
 
@@ -374,8 +387,8 @@
                             <small class="text-muted">Bonds</small>
                         </div>
                         <div class="amount">
-                            <h4>$20,033</h4>
-                            <small class="success">-4.27%</small>
+                            <h4 id="MCD-c">$20,033</h4>
+                            <small class="success" id="MCD-dp">-4.27%</small>
                         </div>
                     </div>
                     <!-- END OF INVESTMENT -->
